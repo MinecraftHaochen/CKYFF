@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"ckyfs2\startup_stm32f103xb.o"
+"ckyfs2\main.o"
+"ckyfs2\gpio.o"
+"ckyfs2\tim.o"
+"ckyfs2\stm32f1xx_it.o"
+"ckyfs2\stm32f1xx_hal_msp.o"
+"ckyfs2\stm32f1xx_hal_gpio_ex.o"
+"ckyfs2\stm32f1xx_hal_tim.o"
+"ckyfs2\stm32f1xx_hal_tim_ex.o"
+"ckyfs2\stm32f1xx_hal.o"
+"ckyfs2\stm32f1xx_hal_rcc.o"
+"ckyfs2\stm32f1xx_hal_rcc_ex.o"
+"ckyfs2\stm32f1xx_hal_gpio.o"
+"ckyfs2\stm32f1xx_hal_dma.o"
+"ckyfs2\stm32f1xx_hal_cortex.o"
+"ckyfs2\stm32f1xx_hal_pwr.o"
+"ckyfs2\stm32f1xx_hal_flash.o"
+"ckyfs2\stm32f1xx_hal_flash_ex.o"
+"ckyfs2\stm32f1xx_hal_exti.o"
+"ckyfs2\system_stm32f1xx.o"
+--strict --scatter "CKYFS2\CKYFS2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CKYFS2.map" -o CKYFS2\CKYFS2.axf
